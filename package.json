@@ -1,5 +1,5 @@
 {
-  "name": "ad-utils",
+  "name": "ad-view",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,8 @@
     "type": "git"
   },
   "author": "RED Interactive Agency",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ad-control": "git://git@github.com/ff0000-ad-tech/ad-control.git"
+  }
 }
