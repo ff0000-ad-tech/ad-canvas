@@ -1,0 +1,106 @@
+CANVAS DRAWER PACKAGE
+
+Last updated: 2016/11/21
+
+	* bug fix with text stroke dash
+	* fixed issue if CanvasElement.scale = 0
+
+Only MAJOR RELEASES should affect migration
+
+RELEASE NOTES:
+
+v3 - October, 2016 - MAJOR RELEASE
+	Changes:
+		* Universal class-name revisions (CanvasDrawerElement changed to CanvasElement, etc)
+		* Removed CanvasDrawerStage, consolidated back into one class: CanvasDrawer
+		* Broke all drawing types - images, rectangles, circles, paths, and text - into separate classes
+		* Creation of CanvasElements now requires a target in the arguments
+		* Broke tweening, tiling, and textures into separate classes
+		* Added effects - CanvasColoring and CanvasBlur
+
+	Markup:
+		global.adData.elements.canvasMain = new CanvasDrawer({
+		    id: 'mainCanvas',
+		    target: adData.elements.redAdContainer,
+		    css: {
+		        x: 0,
+		        y: 0,
+		        width: global.adParams.adWidth,
+		        height: global.adParams.adHeight
+		    }
+		});
+
+		var _myImage = new CanvasImage({
+		    target: global.adData.elements.canvasMain,
+		    source:'MASK',
+		    id:'MASK',
+		    params: {
+		        width:300,
+		        height:250
+		    },
+		    blendMode: CanvasBlendMode.DEST_OUT
+		});
+		  
+		var _myCircle = new CanvasCircle({
+		    target: global.adData.elements.canvasMain,
+		    etc...
+		});
+
+		CanvasTweener.init(global.adData.elements.canvasMain);
+		global.adData.elements.canvasMain.tween.to('MASK', 2, {alpha:0});
+		global.adData.elements.canvasMain.tween.start();
+
+
+v2.5 - Spring, 2016
+	Changes:
+		* Added CanvasDrawerElement
+		* Broke CanvasDrawer into CanvasDrawer and CanvasDrawerStage
+		* Retina support
+		* transformOrigin support
+		* Text support
+
+v2 - January, 2016 - MAJOR RELEASE
+	Changes: 
+		* Syntax now reflects Markup and UIComponent structure
+		* Creation of canvas elements returns instance which can be assigned to a variable
+		* Tween syntax more closely matches traditional Greensock
+
+	Markup:
+			global.adData.elements.canvasMain = CanvasDrawer.create({
+			    id: 'mainCanvas',
+			    target: adData.elements.redAdContainer,
+			    css: {
+			        left: 0,
+			        top: 0,
+			        width: global.adParams.adWidth,
+			        height: global.adParams.adHeight
+			    },
+			    display: true,
+			    retina: false
+			});
+
+			global.adData.elements.canvasMain.addImage({
+			    source:'MASK',
+			    id:'MASK',
+			    params: {
+			        width:300,
+			        height:250
+			    },
+			    blendMode: CanvasBlendMode.DEST_OUT
+			});
+
+			global.adData.elements.canvasMain.addShape({
+			    type: 'circ',
+			    etc...
+			});
+
+			tween.to( 'MASK', 1, {alpha: 0} );
+			tween.start();
+
+v1 - November, 2015 - MAJOR RELEASE
+	Markup:
+			global.adData.elements.canvasMain = new CanvasDrawer();
+			global.adData.elements.canvasMain.create('mainCanvas', adData.elements.redAdContainer, 0, 0, global.adParams.adWidth, global.adParams.adHeight, true, false);
+
+			tween('to', [ 'myElement', 1, {alpha: 0} ] );
+			tweenStart();
