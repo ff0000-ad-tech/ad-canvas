@@ -12,6 +12,7 @@
   "author": "RED Interactive Agency",
   "license": "ISC",
   "dependencies": {
-    "ad-control": "file:~/Internal/ad-control"
+    "ad-control": "file:~/Internal/ad-control",
+    "ad-utils": "file:~/Internal/ad-utils"
   }
 }
