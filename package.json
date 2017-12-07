@@ -12,7 +12,7 @@
   "author": "RED Interactive Agency",
   "license": "ISC",
   "dependencies": {
-    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git",
+    "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git#es6",
     "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
   }
 }
