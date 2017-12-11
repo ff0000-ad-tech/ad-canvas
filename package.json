@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git"
@@ -15,12 +14,5 @@
   "dependencies": {
     "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git#es6",
     "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "webpack": "^3.10.0"
   }
 }
