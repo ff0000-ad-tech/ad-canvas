@@ -17,6 +17,7 @@
     "ad-external": "git://github.com/ff0000-ad-tech/ad-external.git",
     "ad-geom": "git://github.com/ff0000-ad-tech/ad-geom.git",
     "ad-ui": "git://github.com/ff0000-ad-tech/ad-ui.git",
+    "ad-legacy": "git://github.com/ff0000-ad-tech/ad-legacy.git",
     "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
   }
 }
