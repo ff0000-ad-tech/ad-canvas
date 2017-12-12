@@ -14,7 +14,9 @@
   "dependencies": {
     "ad-control": "git://github.com:ff0000-ad-tech/ad-control.git#es6",
     "ad-events": "git://github.com/ff0000-ad-tech/ad-events.git",
+    "ad-external": "git://github.com/ff0000-ad-tech/ad-external.git",
     "ad-geom": "git://github.com/ff0000-ad-tech/ad-geom.git",
+    "ad-ui": "git://github.com/ff0000-ad-tech/ad-ui.git",
     "ad-utils": "git://github.com:ff0000-ad-tech/ad-utils.git"
   }
 }
