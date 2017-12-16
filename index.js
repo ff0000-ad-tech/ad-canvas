@@ -15,7 +15,6 @@ export { default as CanvasText } from './lib/canvas/CanvasText'
 export { default as CanvasTexture } from './lib/canvas/CanvasTexture'
 export { default as CanvasTiling } from './lib/canvas/CanvasTiling'
 export { default as CanvasTweener } from './lib/canvas/CanvasTweener'
-export { default as CanvasUtils } from './lib/canvas/CanvasUtils'
 export { default as Clamp } from './lib/Clamp'
 // export { default as Countdown } from './lib/Countdown'
 export { default as Effects } from './lib/Effects'
@@ -30,8 +29,10 @@ export { default as Ratio } from './lib/Ratio'
 // named exports
 import * as Styles from './lib/Styles'
 import * as Markup from './lib/Markup'
+import * as CanvasUtils from './lib/canvas/CanvasUtils'
 
 export {
 	Markup,
 	Styles,
+	CanvasUtils,
 }
