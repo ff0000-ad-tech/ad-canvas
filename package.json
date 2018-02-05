@@ -12,14 +12,14 @@
 	"author": "RED Interactive Agency",
 	"license": "ISC",
 	"dependencies": {
-		"ad-control": "git+https://github.com:ff0000-ad-tech/ad-control.git",
+		"ad-control": "git+https://github.com/ff0000-ad-tech/ad-control.git",
 		"ad-events": "git+https://github.com/ff0000-ad-tech/ad-events.git",
 		"ad-external": "git+https://github.com/ff0000-ad-tech/ad-external.git",
 		"ad-geom": "git+https://github.com/ff0000-ad-tech/ad-geom.git",
 		"ad-ui": "git+https://github.com/ff0000-ad-tech/ad-ui.git",
 		"ad-legacy": "git+https://github.com/ff0000-ad-tech/ad-legacy.git",
 		"ad-view": "git+https://github.com/ff0000-ad-tech/ad-view.git",
-		"ad-utils": "git+https://github.com:ff0000-ad-tech/ad-utils.git"
+		"ad-utils": "git+https://github.com/ff0000-ad-tech/ad-utils.git"
 	},
 	"devDependencies": {
 		"eslint": "^4.16.0",
