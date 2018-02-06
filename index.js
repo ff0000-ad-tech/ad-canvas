@@ -15,7 +15,9 @@ export { default as CanvasTexture } from './lib/CanvasTexture'
 export { default as CanvasTiling } from './lib/CanvasTiling'
 export { default as CanvasTweener } from './lib/CanvasTweener'
 
+
 // named exports
+// test
 import * as CanvasUtils from './lib/CanvasUtils'
 
 export {
