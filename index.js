@@ -6,7 +6,6 @@ export { default as CanvasCircle } from './lib/CanvasCircle'
 export { default as CanvasRect } from './lib/CanvasRect'
 export { default as CanvasImage } from './lib/CanvasImage'
 export { default as CanvasText } from './lib/CanvasText'
-export { default as CanvasTweenerBase } from './lib/CanvasTweenerBase'
 export { default as CanvasSprite } from './lib/CanvasSprite'
 
 // named exports
