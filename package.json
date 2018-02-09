@@ -1,16 +1,19 @@
 {
-	"name": "ad-canvas",
+	"name": "@ff0000-ad-tech/ad-canvas",
+	"publishConfig": {
+		"access": "public"
+	},
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"pub": "np"
 	},
 	"repository": {
 		"type": "git"
 	},
 	"author": "RED Interactive Agency",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"ad-control": "git+https://github.com/ff0000-ad-tech/ad-control.git",
 		"ad-events": "git+https://github.com/ff0000-ad-tech/ad-events.git",
@@ -25,6 +28,7 @@
 		"eslint": "^4.16.0",
 		"eslint-config-prettier": "^2.9.0",
 		"eslint-plugin-prettier": "^2.5.0",
+		"np": "^2.19.0",
 		"prettier": "^1.10.2"
 	}
 }
