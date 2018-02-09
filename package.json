@@ -3,14 +3,15 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"pub": "np"
 	},
 	"repository": {
-		"type": "git"
+		"type": "git",
+		"url": "https://github.com/ff0000-ad-tech/ad-canvas.git"
 	},
 	"author": "RED Interactive Agency",
 	"license": "MIT",
