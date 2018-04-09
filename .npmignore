@@ -1,2 +1,4 @@
 .prettierrc
 .package-lock.json
+.eslintrc
+CONTRIBUTING.md
