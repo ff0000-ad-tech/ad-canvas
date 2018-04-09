@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -26,6 +26,7 @@
 		"@ff0000-ad-tech/ad-utils": "latest"
 	},
 	"devDependencies": {
+		"babel-eslint": "^8.2.2",
 		"eslint": "^4.16.0",
 		"eslint-config-prettier": "^2.9.0",
 		"eslint-plugin-prettier": "^2.5.0",
