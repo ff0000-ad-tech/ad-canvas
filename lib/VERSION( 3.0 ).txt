@@ -19,9 +19,9 @@ v3 - October, 2016 - MAJOR RELEASE
 		* Added effects - CanvasColoring and CanvasBlur
 
 	Markup:
-		global.adData.elements.canvasMain = new CanvasDrawer({
+		global.View.main.canvasMain = new CanvasDrawer({
 		    id: 'mainCanvas',
-		    target: adData.elements.redAdContainer,
+		    target: View.main,
 		    css: {
 		        x: 0,
 		        y: 0,
@@ -31,7 +31,7 @@ v3 - October, 2016 - MAJOR RELEASE
 		});
 
 		var _myImage = new CanvasImage({
-		    target: global.adData.elements.canvasMain,
+		    target: global.View.main.canvasMain,
 		    source:'MASK',
 		    id:'MASK',
 		    params: {
@@ -42,13 +42,13 @@ v3 - October, 2016 - MAJOR RELEASE
 		});
 		  
 		var _myCircle = new CanvasCircle({
-		    target: global.adData.elements.canvasMain,
+		    target: global.View.main.canvasMain,
 		    etc...
 		});
 
-		CanvasTweener.init(global.adData.elements.canvasMain);
-		global.adData.elements.canvasMain.tween.to('MASK', 2, {alpha:0});
-		global.adData.elements.canvasMain.tween.start();
+		CanvasTweener.init(global.View.main.canvasMain);
+		global.View.main.canvasMain.tween.to('MASK', 2, {alpha:0});
+		global.View.main.canvasMain.tween.start();
 
 
 v2.5 - Spring, 2016
@@ -66,9 +66,9 @@ v2 - January, 2016 - MAJOR RELEASE
 		* Tween syntax more closely matches traditional Greensock
 
 	Markup:
-			global.adData.elements.canvasMain = CanvasDrawer.create({
+			global.View.main.canvasMain = CanvasDrawer.create({
 			    id: 'mainCanvas',
-			    target: adData.elements.redAdContainer,
+			    target: View.main,
 			    css: {
 			        left: 0,
 			        top: 0,
@@ -79,7 +79,7 @@ v2 - January, 2016 - MAJOR RELEASE
 			    retina: false
 			});
 
-			global.adData.elements.canvasMain.addImage({
+			global.View.main.canvasMain.addImage({
 			    source:'MASK',
 			    id:'MASK',
 			    params: {
@@ -89,7 +89,7 @@ v2 - January, 2016 - MAJOR RELEASE
 			    blendMode: CanvasBlendMode.DEST_OUT
 			});
 
-			global.adData.elements.canvasMain.addShape({
+			global.View.main.canvasMain.addShape({
 			    type: 'circ',
 			    etc...
 			});
@@ -99,8 +99,8 @@ v2 - January, 2016 - MAJOR RELEASE
 
 v1 - November, 2015 - MAJOR RELEASE
 	Markup:
-			global.adData.elements.canvasMain = new CanvasDrawer();
-			global.adData.elements.canvasMain.create('mainCanvas', adData.elements.redAdContainer, 0, 0, global.adParams.adWidth, global.adParams.adHeight, true, false);
+			global.View.main.canvasMain = new CanvasDrawer();
+			global.View.main.canvasMain.create('mainCanvas', View.main, 0, 0, global.adParams.adWidth, global.adParams.adHeight, true, false);
 
 			tween('to', [ 'myElement', 1, {alpha: 0} ] );
 			tweenStart();
