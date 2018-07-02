@@ -30,8 +30,8 @@ It may be beneficial to familiarize yourself with the syntax of [ad-ui](https://
 Make a new CanvasDrawer instance - this instance will house whatever elements you create
 
 ```javascript
-let _myCanvasDrawer = new CanvasDrawer({
-    target: _myDomElement,
+let myCanvasDrawer = new CanvasDrawer({
+    target: myDomElement,
     css: {
         width: 300,
         height: 250
@@ -41,13 +41,17 @@ let _myCanvasDrawer = new CanvasDrawer({
 });
 ```
 
-In this example, we create a new `UICanvas` DOM element. Setting `retina: true` means the canvas will render at double-density. Setting `debug: true` adds a background color so that we can see the `<canvas>` element, which is transparent otherwise.
+In this example, we create a new `UICanvas` DOM element (which can be referenced as `myCanvasDrawer.canvas`). Setting `retina: true` means the canvas will render at double-density. Setting `debug: true` adds a background color so that we can see the `<canvas>` element, which is transparent otherwise.
+
+### Rendering
+
+CanvasDrawer has an `update()` method which must be called any time you make a change and want to see it.
 
 # CanvasElements
 
 A `CanvasElement` is the broad term for anything that is drawn within the CanvasDrawer framework. It refers to:
 
--   [CanvasImage](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasImage.html) - use a bitmap or video source to draw
+-   [CanvasImage](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasImage.html) - use a bitmap, canvas, CanvasDrawer, or video source to make image data
 -   [CanvasRect](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasRect.html) - create a rectangle
 -   [CanvasCircle](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasCircle.html) - create an arc, semi circle, or circle
 -   [CanvasPath](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasPath.html) - use points and curves to create a pathed shape
@@ -55,11 +59,11 @@ A `CanvasElement` is the broad term for anything that is drawn within the Canvas
 
 ### Example
 
-Draw an image (or even video) source into a CanvasDrawer. In this example, the source is referenced by the name of the bitmap, as ID'd by [ImageManager](https://github.com/ff0000-ad-tech/ad-control/blob/master/README.md) - this might be `"myBitmap.png"` for instance.
+Draw a bitmap data into a CanvasDrawer. In this example, the source is referenced by the name of the bitmap, as ID'd by [ImageManager](https://github.com/ff0000-ad-tech/ad-control/blob/master/README.md) - this might be `"myBitmap.png"` for instance.
 
 ```javascript
-let _myImage = new CanvasImage({
-    target: _myCanvasDrawer,
+let myImage = new CanvasImage({
+    target: myCanvasDrawer,
     id: 'myCanvasImage'
     source: "myBitmap",
     params: {
@@ -69,13 +73,13 @@ let _myImage = new CanvasImage({
 });
 
 // setting the alpha by ID
-_myCanvasDrawer.elements.myCanvasImage.alpha = 0.5
+myCanvasDrawer.elements.myCanvasImage.alpha = 0.5
 
 // setting the alpha by variable
-_myImage.alpha = 0.5
+myImage.alpha = 0.5
 
 // re-render the CanvasDrawer to ensure update is seen
-_myCanvasDrawer.update()
+myCanvasDrawer.update()
 ```
 
 # Features
@@ -98,10 +102,6 @@ There are also additional classes that, if imported, will open up other features
 -   [blend modes](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasBlendMode.html)
 -   [color transformation effects](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasColoring.html)
 
-### Rendering
-
-CanvasDrawer has an `update()` method which must be called any time you make a change and want to see it.
-
 # Tweening
 
 <a name="tweening"></a>
@@ -112,21 +112,21 @@ Tweening a CanvasElement is as easy as initializing it through `CanvasTweener` -
 
 ```javascript
 // injects tweening capability into a CanvasDrawer instance
-CanvasTweener.init(_myCanvasDrawer);
+CanvasTweener.init(myCanvasDrawer);
 
 // call the CanvasElement to tween by a variable definition
-_myCanvasDrawer.tween.to(_myImage, 2, { rotation: 90, alpha: 0 });
+myCanvasDrawer.tween.to(myImage, 2, { rotation: 90, alpha: 0 });
 // call the CanvasElement to tween by an ID
-_myCanvasDrawer.tween.to("myCanvasImage", 2, { rotation: 90, alpha: 0 });
+myCanvasDrawer.tween.to("myCanvasImage", 2, { rotation: 90, alpha: 0 });
 
-_myCanvasDrawer.tween.fromTo(
-    _myShape,
+myCanvasDrawer.tween.fromTo(
+    myShape,
     2,
     { scale: 0 },
     { scale: 1, ease: Back.easeOut }
 );
 
-_myCanvasDrawer.tween.start();
+myCanvasDrawer.tween.start();
 ```
 
-This `tween` object that is part of your `CanvasDrawer` instance uses the same format as [GreenSock's Tween Package](https://greensock.com/). However, since HTML5 canvas requires refreshing in order to render changes, `CanvasTweener` takes care of that for us without having to write `update()` calls elsewhere. The `_myCanvasDrawer.tween.start()` method ensures these tweens don't begin until we're ready to call all of them.
+This `tween` object that is part of your `CanvasDrawer` instance uses the same format as [GreenSock's Tween Package](https://greensock.com/). However, since HTML5 canvas requires refreshing in order to render changes, `CanvasTweener` takes care of that for us without having to write `update()` calls elsewhere. The `myCanvasDrawer.tween.start()` method ensures these tweens don't begin until we're ready to call all of them.
