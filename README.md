@@ -11,49 +11,15 @@
 
 # Ad Canvas
 
-Package used to easily create HTML5 Canvas2D elements such as text, images, or shapes.
-
-# Why CanvasDrawer?
-
-With vanilla Canvas2D, animation becomes complicated. There are no native object declarations or stored values: you must work that logic out yourself, and constantly call verbose code in order to render graphics.
-
-```javascript
-// any time you want to draw the image at a different X, Y, width, or height, you need to clear your canvas ...
-ctx.clearRect(0, 0, 100, 200);
-
-// and if you want to scale, rotate, or change the alpha, that's another kind of logic you must develop code for and manage yourself
-ctx.save();
-ctx.globalAlpha = 0.5;
-ctx.rotate(Math.PI);
-ctx.restore();
-
-// finally, make a verbose call to the context to draw all images you may have created
-ctx.drawImage(img1, 10, 10, 100, 200);
-ctx.drawImage(img2, 0, 0, 50, 50);
-ctx.drawImage(img3, 100, 30, 60, 60);
-```
-
-CanvasDrawer makes the simple act or redrawing and moving elements easy, saving you file size and processing by packaging the creation and storage of a canvas' drawable data in objects easy to manipulate:
-
-```javascript
-myCanvasImage1.x = 10;
-myCanvasImage2.rotation = 20;
-myCanvasImage3.alpha = 0.5;
-myCanvasDrawer.update();
-```
-
-In addition, there are packages to allow for blurring, color transformations, and other effects. This saves you, the user, the effort of researching how to build and keep track of these effects.
-
-It's also a lightweight package!
-
--   Using every nook and cranny the CanvasDrawer suite has to offer only adds an additional 40k to your file size.
--   Compare that to other packages which are 150k or higher, and you have a fast-loading platform with powerful features giving you the best possible tools for quick development and stunning animations.
+This lightweight package is a simple-to-use tool that makes animation, masking, layering, blend modes, and all sorts of graphical drawing easy!
 
 [Getting Started](#getting-started)
 
 [Features](#features)
 
 [Tweening](#tweening)
+
+[Why CanvasDrawer?](#why-canvasdrawer)
 
 # Getting Started
 
@@ -166,3 +132,57 @@ myCanvasDrawer.tween.start();
 ```
 
 This `tween` object that is part of your `CanvasDrawer` instance uses the same format as [GreenSock's Tween Package](https://greensock.com/). However, since HTML5 canvas requires refreshing in order to render changes, `CanvasTweener` takes care of that for us without having to write `update()` calls elsewhere. The `myCanvasDrawer.tween.start()` method ensures these tweens don't begin until we're ready to call all of them.
+
+# Why CanvasDrawer?
+
+<a name="why-canvasdrawer"></a>
+
+### It's a lightweight package!
+
+-   Using every nook and cranny the CanvasDrawer suite has to offer only adds an additional 40k to your file size.
+-   Compare that to other packages which are 150k or higher, and you have a fast-loading platform with powerful features giving you the best possible tools for quick development and stunning animations.
+
+### The grunt-work has been done for you
+
+-   The classes that allow for blurring, color transformations, etc are there to save you, the user, the effort of researching how to build and keep track of these effects.
+
+### Animations are straightfoward
+
+-   With vanilla Canvas2D, animation becomes complicated. There are no native object declarations or stored values: you must work that logic out yourself, and constantly call verbose code in order to render graphics.
+
+Compare some vanilla canvas drawing to how it might look using CanvasDrawer:
+
+```javascript
+// any time you want to draw the image at a different X, Y, width, or height, you need to clear your canvas ...
+ctx.clearRect(0, 0, 100, 200);
+
+// and if you want to scale, rotate, or change the alpha, that's another kind of logic you must develop code for and manage yourself
+ctx.save();
+ctx.globalAlpha = 0.5;
+ctx.rotate(Math.PI);
+ctx.restore();
+
+// finally, make a verbose call to the context to draw all images you may have created
+ctx.drawImage(img1, 10, 10, 100, 200);
+ctx.drawImage(img2, 0, 0, 50, 50);
+ctx.drawImage(img3, 100, 30, 60, 60);
+
+// and how do you animate this? How do you get your image to move its x-coordinate using TweenLite?
+TweenLite.to(???, 1, {x: 200, onUpdate: function(){
+    ctx.clearRect(...)
+    ctx.drawImage(...)
+ }})
+ // sounds exhausting, and you're going erase every other image you added unless you put in additional conditions to re-draw them.
+```
+
+CanvasDrawer makes the simple act or redrawing and moving elements easy, saving you file size and processing by packaging the creation and storage of a canvas' drawable data in objects easy to manipulate:
+
+```javascript
+myCanvasImage1.x = 10;
+myCanvasImage2.rotation = 20;
+myCanvasImage3.alpha = 0.5;
+
+myCanvasDrawer.tween.to(myCanvasImage1, 1, { x: 200 });
+myCanvasDrawer.tween.start();
+// easy peasy, lemon squeezy
+```
