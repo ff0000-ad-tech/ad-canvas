@@ -29,7 +29,7 @@ It may be beneficial to familiarize yourself with the syntax of [ad-ui](https://
 
 ### CanvasDrawer
 
-Make a new CanvasDrawer instance - this instance will house whatever elements you create
+Make a new `CanvasDrawer` instance - this instance will house whatever elements you create
 
 ```javascript
 let myCanvasDrawer = new CanvasDrawer({
@@ -61,7 +61,7 @@ A `CanvasElement` is the broad term for anything that is drawn within the Canvas
 
 ### Example
 
-Draw a bitmap data into a CanvasDrawer. In this example, the source is referenced by the name of the bitmap, as ID'd by [ImageManager](https://github.com/ff0000-ad-tech/ad-control/blob/master/README.md) - this might be `"myBitmap.png"` for instance.
+Draw a bitmap data into a `CanvasDrawer`. In this example, the source is referenced by the name of the bitmap, as ID'd by [ImageManager](https://github.com/ff0000-ad-tech/ad-control/blob/master/README.md) - this might be `"myBitmap.png"` for instance.
 
 ```javascript
 let myImage = new CanvasImage({
@@ -110,7 +110,7 @@ There are also additional classes that, if imported, will open up other features
 
 [Full documentation available](https://ff0000-ad-tech.github.io/ad-docs/pages/CanvasTweener.html)
 
-Tweening a CanvasElement is as easy as initializing it through `CanvasTweener` - it's an additional load that you might not want, so we give you the option.
+Tweening a `CanvasElement` is as easy as initializing it through `CanvasTweener` - it's an additional load that you might not want, so we give you the option.
 
 ```javascript
 // injects tweening capability into a CanvasDrawer instance
@@ -139,8 +139,8 @@ This `tween` object that is part of your `CanvasDrawer` instance uses the same f
 
 ### It's a lightweight package!
 
--   Using every nook and cranny the CanvasDrawer suite has to offer only adds an additional 40k to your file size.
--   Compare that to other packages which are 150k or higher, and you have a fast-loading platform with powerful features giving you the best possible tools for quick development and stunning animations.
+-   Using every nook and cranny the `CanvasDrawer` suite has to offer only adds an additional **_40k_** to your file size.
+-   Compare that to other packages which are **_150k or higher_**, and you have a fast-loading platform with powerful features giving you the best possible tools for quick development and stunning animations.
 
 ### The grunt-work has been done for you
 
@@ -148,9 +148,9 @@ This `tween` object that is part of your `CanvasDrawer` instance uses the same f
 
 ### Animations are straightfoward
 
--   With vanilla Canvas2D, animation becomes complicated. There are no native object declarations or stored values: you must work that logic out yourself, and constantly call verbose code in order to render graphics.
+-   With vanilla `Canvas2D`, animation becomes complicated. There are no native object declarations or stored values: you must work that logic out yourself, and constantly call verbose code in order to render graphics.
 
-Compare some vanilla canvas drawing to how it might look using CanvasDrawer:
+Compare some vanilla canvas drawing to how it might look using `CanvasDrawer`:
 
 ```javascript
 // any time you want to draw the image at a different X, Y, width, or height, you need to clear your canvas ...
@@ -175,7 +175,7 @@ TweenLite.to(???, 1, {x: 200, onUpdate: function(){
  // sounds exhausting, and you're going erase every other image you added unless you put in additional conditions to re-draw them.
 ```
 
-CanvasDrawer makes the simple act or redrawing and moving elements easy, saving you file size and processing by packaging the creation and storage of a canvas' drawable data in objects easy to manipulate:
+`CanvasDrawer` makes the simple act or redrawing and moving elements easy, saving you file size and processing by packaging the creation and storage of a canvas' drawable data in objects easy to manipulate:
 
 ```javascript
 myCanvasImage1.x = 10;
