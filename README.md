@@ -11,15 +11,23 @@
 
 # Ad Canvas
 
-This lightweight package is a simple-to-use tool that makes animation, masking, layering, blend modes, and all sorts of graphical drawing easy!
+This lightweight package is a simple-to-use tool that makes it easy to create animation, masking, layering, blend modes, and drawing all sorts of [graphical content](#canvasElements), such as:
+
+-   Vector paths
+-   Shapes
+-   Bitmaps
+-   Videos
+-   Text
+
+Read more about some of the ways this framework compares to vanilla javascript in the [Why CanvasDrawer?](#why-canvasdrawer) section.
 
 [Getting Started](#getting-started)
+
+[Canvas Elements](#canvasElements)
 
 [Features](#features)
 
 [Tweening](#tweening)
-
-[Why CanvasDrawer?](#why-canvasdrawer)
 
 # Getting Started
 
@@ -45,11 +53,13 @@ let myCanvasDrawer = new CanvasDrawer({
 
 In this example, we create a new `UICanvas` DOM element (which can be referenced as `myCanvasDrawer.canvas`). Setting `retina: true` means the canvas will render at double-density. Setting `debug: true` adds a background color so that we can see the `<canvas>` element, which is transparent otherwise.
 
-### Rendering
+### **Rendering**
 
 CanvasDrawer has an `update()` method which must be called any time you make a change and want to see it.
 
 # CanvasElements
+
+<a name="canvasElements"></a>
 
 A `CanvasElement` is the broad term for anything that is drawn within the CanvasDrawer framework. It refers to:
 
