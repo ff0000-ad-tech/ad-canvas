@@ -7,11 +7,13 @@ export { default as CanvasRect } from './lib/CanvasRect'
 export { default as CanvasImage } from './lib/CanvasImage'
 export { default as CanvasText } from './lib/CanvasText'
 export { default as CanvasSprite } from './lib/CanvasSprite'
+export { default as CanvasDisplacementMap } from './lib/CanvasDisplacementMap'
 
 // named exports
 import * as CanvasBlendMode from './lib/CanvasBlendMode'
 import * as CanvasBlur from './lib/CanvasBlur'
 import * as CanvasColoring from './lib/CanvasColoring'
+import * as CanvasDisplaceChannel from './lib/CanvasDisplaceChannel'
 import * as CanvasLineTo from './lib/CanvasLineTo'
 import * as CanvasTexture from './lib/CanvasTexture'
 import * as CanvasTiling from './lib/CanvasTiling'
@@ -22,6 +24,7 @@ export {
 	CanvasBlendMode,
 	CanvasBlur,
 	CanvasColoring,
+	CanvasDisplaceChannel,
 	CanvasLineTo,
 	CanvasTexture,
 	CanvasTiling,
