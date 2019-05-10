@@ -25,7 +25,7 @@ Blur the content of a canvas DOM element
 
 <b>EXAMPLES::</b><br>
 Starting with this image::<br>
-<img src="../docs_images/canvasdrawer/default.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/default.jpg" />
 <br><br>
 
 Blur while preserving alpha::
@@ -37,7 +37,7 @@ CanvasBlur.set({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/blur.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blur.jpg" />
 <br><br>
 
 Blur while preserving outline::<br>
@@ -52,7 +52,7 @@ CanvasBlur.set({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/blur_noAlpha.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blur_noAlpha.jpg" />
 <br><br>
 
 Blur content horizontally only::<br>
@@ -65,7 +65,7 @@ CanvasBlur.set({
 })
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/blur_x.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blur_x.jpg" />
 
 **Kind**: static method of [<code>CanvasBlur</code>](#CanvasBlur)  
 

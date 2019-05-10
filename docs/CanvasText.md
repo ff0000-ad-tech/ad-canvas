@@ -8,7 +8,7 @@
 | Name | Type | Description |
 | --- | --- | --- |
 | target | [<code>CanvasDrawer</code>](#CanvasDrawer) | the CanvasDrawer element in which to draw the text |
-| id | <code>string</code> | an optional STRING defining the name by which the text will be referenced. Defaults to 'canvasdItemX' where X = the number of  	elements in a [CanvasDrawer](#CanvasDrawer) |
+| id | <code>string</code> | an optional STRING defining the name by which the text will be referenced. Defaults to 'canvasdItemX' where X = the number of 	elements in a [CanvasDrawer](#CanvasDrawer) |
 | text | <code>string</code> | the string of text for the canvas textfield. Supports line breaks  <span><</span>br> |
 | css | <code>object</code> | standard css object, see properties: |
 | css.x | <code>number</code> | NUMBER X coordinate for where to draw the image data |
@@ -26,7 +26,7 @@
 | css.dropShadow.angle | <code>number</code> | NUMBER IN DEGREES for the angle to position the shadow |
 | css.dropShadow.distance | <code>number</code> | NUMBER for how far away from the text the shadow is |
 | css.dropShadow.blur | <code>number</code> | NUMBER for how blurry the shadow is |
-| css.dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000",  			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)",  			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
+| css.dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000", 			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)", 			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
 | css.dropShadow.alpha | <code>number</code> | NUMBER for the alpha of the shadow. Defaults to 1, overrides the alpha of an RGBA color |
 | offsetX | <code>number</code> | NUMBER representing the X offset of the text |
 | offsetY | <code>number</code> | NUMBER representing the Y offset of the text |
@@ -38,8 +38,8 @@
 | stroke.fill | <code>string</code> \| [<code>CanvasTexture</code>](#CanvasTexture) | an optional STRING or gradiant variable defining the color fill of the shape stroke. Defaults to  none / invisible |
 | stroke.width | <code>number</code> | an optional NUMBER value determining stroke width. Defaults to 0 |
 | stroke.position | <code>string</code> | an optional STRING determining if the stroke will be 'outer' or 'center'. Defaults to 'outer', there is no 'inner' |
-| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt' 		<br> 		<img src="../docs_images/canvasdrawer/lineCap.jpg" /> 		<br> |
-| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'round' 		<br> 		<img src="../docs_images/canvasdrawer/lineJoin.jpg" /> 		<br> |
+| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt' 		<br> 		<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineCap.jpg" /> 		<br> |
+| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'round' 		<br> 		<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineJoin.jpg" /> 		<br> |
 | dashSize | <code>number</code> | an optional NUMBER value determining the length of each segment in a dashed line |
 | dashGap | <code>number</code> | an optional NUMBER value determining the gap between each segment in a dashed line. Defaults to 0, unless dashSize is defined, then defaults to dashSize |
 | visible | <code>boolean</code> | an optional BOOLEAN that, when set to false, will not render the element. Defaults to true |
@@ -91,7 +91,7 @@ import { CanvasText } from 'ad-canvas'
 </pre>
 <br>
 <b>NOTE</b><br>
-<code>transformOrigin</code> is based on the text alignment. '0% 0%' for text aligned right will be at that text's TOP-RIGHT, '100% 0%' would be its TOP-LEFT. 
+<code>transformOrigin</code> is based on the text alignment. '0% 0%' for text aligned right will be at that text's TOP-RIGHT, '100% 0%' would be its TOP-LEFT.
 Centered and left-aligned text's '0% 0%' is its TOP-LEFT.
 <br><br>
 <b>EXAMPLE</b><br>

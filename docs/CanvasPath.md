@@ -25,7 +25,7 @@
 | dropShadow.angle | <code>number</code> | NUMBER IN DEGREES for the angle to position the shadow |
 | dropShadow.distance | <code>number</code> | NUMBER for how far away from the image the shadow is |
 | dropShadow.blur | <code>number</code> | NUMBER for how blurry the shadow is |
-| dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000",  			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)",  			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
+| dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000", 			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)", 			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
 | dropShadow.alpha | <code>number</code> | NUMBER for the alpha of the shadow. Defaults to 1, overrides the alpha of an RGBA color |
 | blendMode | <code>string</code> \| [<code>CanvasBlendMode</code>](#CanvasBlendMode) | an optional STRING for the globalCompositeOperation - controls overlays, screens, multiply, masking, etc. Defaults to 'source-over' |
 | fill | <code>string</code> | an optional STRING or gradiant variable defining the color fill of the shape. Defaults to none / invisible |
@@ -33,8 +33,8 @@
 | stroke.fill | <code>string</code> | an optional STRING or gradiant variable defining the color fill of the shape stroke. Defaults to  none / invisible |
 | stroke.width | <code>number</code> | an optional NUMBER value determining stroke width. Defaults to 0 |
 | stroke.position | <code>string</code> | an optional STRING determining if the stroke will be 'outer' or 'center'. Defaults to 'outer', there is no 'inner' |
-| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt' 			<br> 			<img src="../docs_images/canvasdrawer/lineCap.jpg" /> |
-| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'miter' 			<br> 			<img src="../docs_images/canvasdrawer/lineJoin.jpg" /> |
+| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt' 			<br> 			<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineCap.jpg" /> |
+| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'miter' 			<br> 			<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineJoin.jpg" /> |
 | stroke.dashSize | <code>number</code> | an optional NUMBER value determining the length of each segment in a dashed line |
 | stroke.dashGap | <code>number</code> | an optional NUMBER value determining the gap between each segment in a dashed line. Defaults to 0, unless dashSize is defined, then defaults to dashSize |
 | stroke.dashOffset | <code>number</code> | an optional NUMBER value which offsets the positioning of the dash segments. A positive number moves them counter-clockwise. Defaults to 0 |
@@ -79,9 +79,9 @@
 Add a path shape to a [CanvasDrawer](#CanvasDrawer) based on a given object containing lines and coordinate data, and return a reference to that shape
 <pre class="sunlight-highlight-javascript">
 import { CanvasPath } from 'ad-canvas'
-</pre> 
+</pre>
 <br><br>
-<b>NOTE::</b><br> 
+<b>NOTE::</b><br>
 <code>width</code> and <code>height</code> properties do NOT affect CanvasPaths - use scaleX and scaleY to manipulate the size of these objects.
 <br><br>
 <b>POINT FORMATS::</b><br>
@@ -114,8 +114,8 @@ var _myShape = new CanvasPath({
 		y: 100,
 	},
 	points: [
-			{ fun: CanvasLineTo.MOVE, points: [.5, -3.5] }, 
-			{ fun: CanvasLineTo.BEZIER, points: [-3.5, -2.8, -3, .2, -2.5, .2] }, 
+			{ fun: CanvasLineTo.MOVE, points: [.5, -3.5] },
+			{ fun: CanvasLineTo.BEZIER, points: [-3.5, -2.8, -3, .2, -2.5, .2] },
 			{ fun: CanvasLineTo.QUAD, points: [2, -3, .5, -3.5] }
 	],
 	blendMode: 'screen',

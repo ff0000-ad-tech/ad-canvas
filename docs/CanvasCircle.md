@@ -28,7 +28,7 @@
 | dropShadow.angle | <code>number</code> | NUMBER IN DEGREES for the angle to position the shadow |
 | dropShadow.distance | <code>number</code> | NUMBER for how far away from the circle the shadow is |
 | dropShadow.blur | <code>number</code> | NUMBER for how blurry the shadow is |
-| dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000",  			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)",  			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
+| dropShadow.color | <code>string</code> \| <code>object</code> | optional color of shadow as either a HEX STRING :"#ff0000", 			RGB/A STRING: "rgb(255, 0, 0)" / "rgba(255, 0, 0, 1)", 			or an RGB/A OBJECT:{r:255,g:0,b:0} / {r:255,g:0,b:0,a:1}. Defaults to '#000000' |
 | dropShadow.alpha | <code>number</code> | NUMBER for the alpha of the shadow. Defaults to 1, overrides the alpha of an RGBA color. |
 | blendMode | <code>string</code> \| [<code>CanvasBlendMode</code>](#CanvasBlendMode) | an optional STRING for the globalCompositeOperation - controls overlays, screens, multiply, masking, etc. Defaults to 'source-over'. |
 | fill | <code>string</code> \| [<code>CanvasTexture</code>](#CanvasTexture) | an optional STRING or gradiant variable defining the color fill of the circle. Defaults to none / invisible. |
@@ -36,8 +36,8 @@
 | stroke.fill | <code>string</code> \| [<code>CanvasTexture</code>](#CanvasTexture) | an optional STRING or gradiant variable defining the color fill of the circle stroke. Defaults to  none / invisible. |
 | stroke.width | <code>number</code> | an optional NUMBER value determining stroke width. Defaults to 0. |
 | stroke.position | <code>string</code> | an optional STRING determining if the stroke will be 'outer' or 'center'. Defaults to 'outer', there is no 'inner'. |
-| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt'. 		<br> 		<img src="../docs_images/canvasdrawer/lineCap.jpg" /> 		<br> |
-| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'miter'. 		<br> 		<img src="../docs_images/canvasdrawer/lineJoin.jpg" /> 		<br> |
+| stroke.cap | <code>string</code> | an optional STRING value determining a line's cap style: 'butt', 'round', and 'square'. Defaults to 'butt'. 		<br> 		<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineCap.jpg" /> 		<br> |
+| stroke.join | <code>string</code> | an optional STRING value determining how two lines/corners connect: 'round', 'bevel', and 'miter'. Defaults to 'miter'. 		<br> 		<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/lineJoin.jpg" /> 		<br> |
 | stroke.dashSize | <code>number</code> | an optional NUMBER value determining the length of each segment in a dashed line. |
 | stroke.dashGap | <code>number</code> | an optional NUMBER value determining the gap between each segment in a dashed line. Defaults to 0, unless dashSize is defined, then defaults to dashSize. |
 | stroke.dashOffset | <code>number</code> | an optional NUMBER value which offsets the positioning of the dash segments. A positive number moves them counter-clockwise. Defaults to 0. |
@@ -82,13 +82,13 @@ Import from <a href="https://github.com/ff0000-ad-tech/ad-canvas">ad-canvas</a>
 <pre class="sunlight-highlight-javascript">
 import { CanvasCircle } from 'ad-canvas'
 </pre>
-<br><br> 
+<br><br>
 <b>Sample 1</b><br>
 Adding an semi-circle arc with a red fill and no lines::<br>
 <pre class="sunlight-highlight-javascript">
 var _myShape = new CanvasCircle({
 	target: View.main.myCanvasDrawer,
-	id: 'myCircle', 
+	id: 'myCircle',
 	params: {
 		x: 150,
 		y: 125,
@@ -105,14 +105,14 @@ adding the same circle using WIDTH and DEGREES instead of RADIUS and RADIANS::<b
 <pre class="sunlight-highlight-javascript">
 var _myShape = new CanvasCircle({
 	target: View.main.myCanvasDrawer,
-	id: 'myCircle', 
+	id: 'myCircle',
 	params: {
-		x:150, 
-		y:125, 
-		width:200, 
-		startAngle:0, 
-		endAngle:180 
-	}, 
+		x:150,
+		y:125,
+		width:200,
+		startAngle:0,
+		endAngle:180
+	},
 	fill: 'red'
 })
 </pre>

@@ -20,7 +20,7 @@ Import from <a href="https://github.com/ff0000-ad-tech/ad-canvas">ad-canvas</a>
 import { CanvasDisplaceChannel } from 'ad-canvas'
 </pre>
 <b>What the map looks featuring red, green, blue, and alpha channels:</b>
-<img src="../docs_images/canvasdrawer/channel_map.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_map.jpg" />
 
 <a name="CanvasDisplaceChannel.RED"></a>
 
@@ -29,10 +29,10 @@ Represents 0, which targets <span style='color: red;'>red</span> bitmap data in 
   <br>
   <b>What the map looks like with only the red channel:</b>
   <br>
-  <img src="../docs_images/canvasdrawer/channel_red.jpg" />
+  <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_red.jpg" />
   <br>
   <b>The white parts are what CanvasDisplacementMap will displace; the black parts will remain unaffected:</b>
-  <img src="../docs_images/canvasdrawer/channel_red2.jpg" />
+  <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_red2.jpg" />
 
 **Kind**: static constant of [<code>CanvasDisplaceChannel</code>](#CanvasDisplaceChannel)  
 **Example**  
@@ -46,10 +46,10 @@ Represents 1, which targets <span style='color: green;'>green</span> bitmap data
     <br>
     <b>What the map looks like with only the green channel:</b>
     <br>
-    <img src="../docs_images/canvasdrawer/channel_green.jpg" />
+    <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_green.jpg" />
     <br>
     <b>The white parts are what CanvasDisplacementMap will displace; the black parts will remain unaffected:</b>
-    <img src="../docs_images/canvasdrawer/channel_green2.jpg" />
+    <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_green2.jpg" />
 
 **Kind**: static constant of [<code>CanvasDisplaceChannel</code>](#CanvasDisplaceChannel)  
 **Example**  
@@ -63,10 +63,10 @@ Represents 2, which targets <span style='color: blue;'>blue</span> bitmap data i
     <br>
     <b>What the map looks like with only the blue channel:</b>
     <br>
-    <img src="../docs_images/canvasdrawer/channel_blue.jpg" />
+    <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_blue.jpg" />
     <br>
     <b>The white parts are what CanvasDisplacementMap will displace; the black parts will remain unaffected:</b>
-    <img src="../docs_images/canvasdrawer/channel_blue2.jpg" />
+    <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_blue2.jpg" />
 
 **Kind**: static constant of [<code>CanvasDisplaceChannel</code>](#CanvasDisplaceChannel)  
 **Example**  
@@ -79,7 +79,7 @@ CanvasDisplaceChannel.BLUE
 Represents 3, which targets <b>alpha</b> bitmap data in a CanvasDisplacementMap
     <br>
     <b>The white parts are what CanvasDisplacementMap will displace; the black parts will remain unaffected:</b>
-    <img src="../docs_images/canvasdrawer/channel_alpha.jpg" />
+    <img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/channel_alpha.jpg" />
 
 **Kind**: static constant of [<code>CanvasDisplaceChannel</code>](#CanvasDisplaceChannel)  
 **Example**  

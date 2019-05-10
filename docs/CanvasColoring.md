@@ -21,9 +21,9 @@ Import from <a href="https://github.com/ff0000-ad-tech/ad-canvas">ad-canvas</a>
 <br>
 <pre class="sunlight-highlight-javascript">
 import { CanvasColoring } from 'ad-canvas'
-</pre> 
+</pre>
 All examples in this class demonstrate effects applied to this image:<br>
-<img src="../docs_images/canvasdrawer/default.jpg" /><br>
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/default.jpg" /><br>
 
 <a name="CanvasColoring.hue"></a>
 
@@ -37,7 +37,7 @@ CanvasColoring.hue({
 })
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/hue.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/hue.jpg" />
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  
 
@@ -64,7 +64,7 @@ CanvasColoring.saturation({
 })
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/sat.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/sat.jpg" />
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  
 
@@ -94,7 +94,7 @@ CanvasColoring.contrast({
 })
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/contrast.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/contrast.jpg" />
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  
 
@@ -125,7 +125,7 @@ CanvasColoring.tint({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/tintGreen.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/tintGreen.jpg" />
 <br><br>
 <pre class="sunlight-highlight-javascript">
 // tint to MAGENTA
@@ -140,7 +140,7 @@ CanvasColoring.tint({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/tintMagenta.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/tintMagenta.jpg" />
 <br><br>
 <pre class="sunlight-highlight-javascript">
 // 50% tint to BLUE
@@ -151,7 +151,7 @@ CanvasColoring.tint({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/tintBlue.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/tintBlue.jpg" />
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  
 
@@ -183,7 +183,7 @@ CanvasColoring.transform({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/transGreen.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/transGreen.jpg" />
 <br><br>
 <pre class="sunlight-highlight-javascript">
 // pulls all colors EXCEPT for RED and BLUE values out of the target
@@ -198,7 +198,7 @@ CanvasColoring.transform({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/transBlueRed.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/transBlueRed.jpg" />
 <br><br>
 <pre class="sunlight-highlight-javascript">
 // pulls 50% of all colors EXCEPT for BLUE values out of the target
@@ -209,7 +209,7 @@ CanvasColoring.transform({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/transBlue.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/transBlue.jpg" />
 <br><br>
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  
@@ -239,7 +239,7 @@ CanvasColoring.invert({
 });
 </pre>
 <br>
-<img src="../docs_images/canvasdrawer/invert.jpg" />
+<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/invert.jpg" />
 <br><br>
 
 **Kind**: static method of [<code>CanvasColoring</code>](#CanvasColoring)  

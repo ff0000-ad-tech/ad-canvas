@@ -109,7 +109,7 @@ Internet Explorer, Edge 12, Opera Mini 8, Android Browser 4.3:</b>
 ### CanvasBlendMode.NONE : <code>string</code>
 Represents 'source-over'. Displays the source content over the destination content. This is the default setting.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_none.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_none.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -121,7 +121,7 @@ CanvasBlendMode.NONE
 ### CanvasBlendMode.UNDER : <code>string</code>
 Represents 'destination-over'. Displays the destination content over the source content.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_under.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_under.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -133,7 +133,7 @@ CanvasBlendMode.UNDER
 ### CanvasBlendMode.SOURCE\_IN : <code>string</code>
 Represents 'source-in'. Displays the source content within the destination content. Only the part of the source content that is INSIDE the destination content is shown, and the destination content is transparent.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_sourceIn.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_sourceIn.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -145,7 +145,7 @@ CanvasBlendMode.SOURCE_IN
 ### CanvasBlendMode.SOURCE\_OUT : <code>string</code>
 Represents 'source-out'. Displays the source content outside of the destination content. Only the part of the source content that is OUTSIDE the destination content is shown, and the destination content is transparent.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_sourceOut.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_sourceOut.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -157,7 +157,7 @@ CanvasBlendMode.SOURCE_OUT
 ### CanvasBlendMode.SOURCE\_ATOP : <code>string</code>
 Represents 'source-atop'. Displays the destination content on top of the source content. The part of the destination content that is outside the source content is not shown.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_sourceAtop.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_sourceAtop.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -169,7 +169,7 @@ CanvasBlendMode.SOURCE_ATOP
 ### CanvasBlendMode.DEST\_IN : <code>string</code>
 Represents 'destination-in'. Displays the destination content within the source content. Only the part of the destination content that is INSIDE the source content is shown, and the source content is transparent.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_destIn.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_destIn.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -181,7 +181,7 @@ CanvasBlendMode.DEST_IN
 ### CanvasBlendMode.DEST\_OUT : <code>string</code>
 Represents 'destination-out'. Displays the destination content outside of the source content. Only the part of the destination content that is OUTSIDE the source content is shown, and the source content is transparent.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_destOut.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_destOut.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -193,7 +193,7 @@ CanvasBlendMode.DEST_OUT
 ### CanvasBlendMode.DEST\_ATOP : <code>string</code>
 Represents 'destination-atop'. Displays the destination content on top of the source content. The part of the destination content that is outside the source content is not shown.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_destAtop.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_destAtop.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -205,7 +205,7 @@ CanvasBlendMode.DEST_ATOP
 ### CanvasBlendMode.XOR : <code>string</code>
 Represents 'xor'. Only areas where the destination content and source content do not overlap are displayed. The parts that do overlap are not shown.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_xor.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_xor.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  
@@ -217,7 +217,7 @@ CanvasBlendMode.XOR
 ### CanvasBlendMode.COPY : <code>string</code>
 Represents 'copy'. Displays the source content. The destination content is ignored.
 	<br>
-	<img src="../docs_images/canvasdrawer/blend_copy.jpg" />
+	<img src="https://github.com/ff0000-ad-tech/ad-docs/blob/master/assets/ad-canvas/blend_copy.jpg" />
 
 **Kind**: static constant of [<code>CanvasBlendMode</code>](#CanvasBlendMode)  
 **Example**  

@@ -170,20 +170,20 @@ Compare some vanilla canvas drawing to how it might look using `CanvasDrawer`:
 ```javascript
 // any time you want to draw the image at a different X, Y, width, or height, 
 // you need to clear your canvas ...
-ctx.clearRect(0, 0, 100, 200);
+ctx.clearRect(0, 0, 100, 200)
 
 // and if you want to scale, rotate, or change the alpha, that's another kind of logic 
 // you must develop code for and
 manage yourself
-ctx.save();
-ctx.globalAlpha = 0.5;
-ctx.rotate(Math.PI);
-ctx.restore();
+ctx.save()
+ctx.globalAlpha = 0.5
+ctx.rotate(Math.PI)
+ctx.restore()
 
 // finally, make a verbose call to the context to draw all images you may have created
-ctx.drawImage(img1, 10, 10, 100, 200);
-ctx.drawImage(img2, 0, 0, 50, 50);
-ctx.drawImage(img3, 100, 30, 60, 60);
+ctx.drawImage(img1, 10, 10, 100, 200)
+ctx.drawImage(img2, 0, 0, 50, 50)
+ctx.drawImage(img3, 100, 30, 60, 60)
 
 // and how do you animate this? How do you get your image to move its x-coordinate using TweenLite?
 TweenLite.to(???, 1, {x: 200, onUpdate: function(){
@@ -198,12 +198,12 @@ TweenLite.to(???, 1, {x: 200, onUpdate: function(){
 packaging the creation and storage of a canvas' drawable data in objects easy to manipulate:
 
 ```javascript
-myCanvasImage1.x = 10;
-myCanvasImage2.rotation = 20;
-myCanvasImage3.alpha = 0.5;
+myCanvasImage1.x = 10
+myCanvasImage2.rotation = 20
+myCanvasImage3.alpha = 0.5
 
-myCanvasDrawer.tween.to(myCanvasImage1, 1, { x: 200 });
-myCanvasDrawer.tween.start();
+myCanvasDrawer.tween.to(myCanvasImage1, 1, { x: 200 })
+myCanvasDrawer.tween.start()
 // easy peasy, lemon squeezy
 ```
 
