@@ -1,25 +1,20 @@
 ##### RED Interactive Agency - Ad Technology
 
-[![npm
-(tag)](https://img.shields.io/npm/v/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-canvas)
-[![GitHub
-issues](https://img.shields.io/github/issues/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas)
-[![npm
-downloads](https://img.shields.io/npm/dm/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-canvas)
+[![npm (tag)](https://img.shields.io/npm/v/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-canvas)
+[![GitHub issues](https://img.shields.io/github/issues/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas)
+[![npm downloads](https://img.shields.io/npm/dm/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://www.npmjs.com/package/@ff0000-ad-tech%2Fad-canvas)
 
-[![GitHub
-contributors](https://img.shields.io/github/contributors/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/graphs/contributors/)
-[![GitHub
-commit-activity](https://img.shields.io/github/commit-activity/y/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/commits/master)
-[![npm
-license](https://img.shields.io/npm/l/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/blob/master/LICENSE)
-[![PRs
-Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![GitHub contributors](https://img.shields.io/github/contributors/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/graphs/contributors/)
+[![GitHub commit-activity](https://img.shields.io/github/commit-activity/y/ff0000-ad-tech/ad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/commits/master)
+[![npm license](https://img.shields.io/npm/l/@ff0000-ad-tech%2Fad-canvas.svg?style=flat-square)](https://github.com/ff0000-ad-tech/ad-canvas/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+* * *
 
 # Ad Canvas
 
 This lightweight package is a simple-to-use tool that makes it easy to create animation, masking, layering, blend modes,
-and drawing all sorts of graphical content, such as:
+and drawing all sorts of [graphical content](#canvasElements), such as:
 
 - Vector paths
 - Shapes
@@ -27,16 +22,16 @@ and drawing all sorts of graphical content, such as:
 - Videos
 - Text
 
-Read more about some of the ways this framework compares to vanilla javascript in the Why
-CanvasDrawer? section.
+Read more about some of the ways this framework compares to vanilla javascript in the [Why
+CanvasDrawer?](#why-canvasdrawer) section.
 
-Getting Started
+[Getting Started](#getting-started)
 
-Canvas Elements
+[Canvas Elements](#canvasElements)
 
-Features
+[Features](#features)
 
-Tweening
+[Tweening](#tweening)
 
 # Getting Started
 
@@ -209,7 +204,7 @@ myCanvasDrawer.tween.start()
 
 * * *
 
-# API
+## API
 
 ## <a name="CanvasBlendMode" href="./docs/CanvasBlendMode.md">CanvasBlendMode</a>
 * <a href="./docs/CanvasBlendMode.md#CanvasBlendMode.NONE">.NONE</a> : <code>string</code>
@@ -453,5 +448,6 @@ myCanvasDrawer.tween.start()
 ## <a name="CanvasUtils" href="./docs/CanvasUtils.md">CanvasUtils</a>
 * <a href="./docs/CanvasUtils.md#CanvasUtils.getImageData">.getImageData(source)</a>
 * <a href="./docs/CanvasUtils.md#CanvasUtils.setImageData">.setImageData(target, data)</a>
+
 
 * * *
