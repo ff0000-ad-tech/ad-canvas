@@ -1,0 +1,18 @@
+{{#classes}}
+{{>header}}
+{{#groupBy (option "group-by")~}}
+{{#if ('&&'
+    ('!==' name "CanvasBlendMode")
+    ('!==' name "CanvasBlur")
+    ('!==' name "CanvasColoring")
+    ('!==' name "CanvasDisplaceChannel")
+    ('!==' name "CanvasLineTo")
+    ('!==' name "CanvasTexture")
+    ('!==' name "CanvasTiling")
+    ('!==' name "CanvasTweener")
+    ('!==' name "CanvasUtils")
+)}}
+{{>member-index-grouped}}
+{{/if}}
+{{/groupBy~}}
+{{/classes}}
