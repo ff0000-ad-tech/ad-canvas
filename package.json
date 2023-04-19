@@ -35,7 +35,7 @@
 		"eslint": "^4.16.0",
 		"eslint-config-prettier": "^2.9.0",
 		"eslint-plugin-prettier": "^2.5.0",
-		"np": "^2.19.0",
+		"np": "^7.7.0",
 		"prettier": "^1.10.2",
 		"@ff0000-ad-tech/ad-docs": "git+https://github.com/ff0000-ad-tech/ad-docs.git"
 	}
